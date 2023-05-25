@@ -17,7 +17,7 @@ public class MailInboxPage extends BaseForm {
     }
 
     public boolean isUserLoggedIn() {
-        return userButton.isPresent();
+        return userButton.isDisplayed();
     }
 
     public SideBarForm getSideBarForm() {

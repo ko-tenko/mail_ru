@@ -11,9 +11,12 @@ public abstract class BaseElement {
         this.locator = locator;
     }
 
-
     public void click() {
         CustomWaits.elementIsVisible(locator).click();
+    }
+
+    public boolean isDisplayed() {
+        return CustomWaits.elementIsVisible(locator).isDisplayed();
     }
 
 

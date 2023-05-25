@@ -12,7 +12,12 @@ public class SideBarForm extends BaseForm {
         super(By.xpath("//*[@id='sideBarContent']"));
     }
 
-    public void clickComposeLetterButton() {
+    private void clickComposeLetterButton() {
         composeLetterButton.click();
+    }
+
+    public ComposeLetterForm getComposeLetterForm() {
+        clickComposeLetterButton();
+        return new ComposeLetterForm();
     }
 }

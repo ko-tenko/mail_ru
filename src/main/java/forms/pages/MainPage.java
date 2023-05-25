@@ -14,7 +14,7 @@ public class MainPage extends BaseForm {
         super(By.xpath("//a[@data-testid= 'mailbox-create-link']"));
     }
 
-    public void clickLoginBtn() {
+    public void clickLoginButton() {
         loginButton.click();
     }
 
