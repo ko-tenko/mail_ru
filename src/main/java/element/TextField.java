@@ -3,16 +3,16 @@ package element;
 import driver.CustomWaits;
 import org.openqa.selenium.By;
 
-public class Button extends BaseElement {
+public class TextField extends BaseElement {
 
     private final By locator;
 
-    public Button(By locator) {
+    public TextField(By locator) {
         super(locator);
         this.locator = locator;
     }
 
-    public void submit() {
-        CustomWaits.elementIsVisible(locator).submit();
+    public void sendKeys(String key) {
+        CustomWaits.elementIsVisible(locator).sendKeys(key);
     }
 }

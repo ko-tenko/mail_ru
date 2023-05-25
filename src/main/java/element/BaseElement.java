@@ -1,17 +1,20 @@
 package element;
 
-import driver.DriverWaits;
+import driver.CustomWaits;
+import org.openqa.selenium.By;
 
 public abstract class BaseElement {
 
-    private final String xpath;
+    private final By locator;
 
-    public BaseElement(String xpath) {
-        this.xpath = xpath;
+    public BaseElement(By locator) {
+        this.locator = locator;
     }
 
 
     public void click() {
-        DriverWaits.elementIsVisible(xpath).click();
+        CustomWaits.elementIsVisible(locator).click();
     }
+
+
 }

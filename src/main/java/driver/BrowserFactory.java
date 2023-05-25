@@ -6,12 +6,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import utils.FileManagerUtil;
 
 public class BrowserFactory {
 
     private BrowserFactory() {}
 
-    public static WebDriver getWebDriver(String browserName) {
+    public static WebDriver getWebDriver() {
+        String browserName = FileManagerUtil.getValue("config.json", "browser");
         if (browserName.equalsIgnoreCase("chrome")) {
             return getChromeDriver();
         } else if (browserName.equalsIgnoreCase("firefox")) {

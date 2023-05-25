@@ -10,7 +10,7 @@ public class CustomWebDriver {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            driver =  BrowserFactory.getWebDriver("chrome");
+            driver =  BrowserFactory.getWebDriver();
         }
         return driver;
     }
