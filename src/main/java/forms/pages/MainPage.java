@@ -22,4 +22,8 @@ public class MainPage extends BaseForm {
         loginFrame.switchToFrame();
     }
 
+    public void exitLoginFrame() {
+        loginFrame.exitFrame();
+    }
+
 }

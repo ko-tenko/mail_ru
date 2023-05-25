@@ -16,4 +16,8 @@ public class Frame extends BaseElement {
     public void switchToFrame() {
         CustomWebDriver.getDriver().switchTo().frame(CustomWaits.elementIsVisible(locator));
     }
+
+    public void exitFrame() {
+        CustomWebDriver.getDriver().switchTo().defaultContent();
+    }
 }
