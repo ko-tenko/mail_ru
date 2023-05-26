@@ -12,6 +12,7 @@ public final class TextUtil {
 
     public static String generateText(int wordCount) {
         if (wordCount <= 0) {
+            LOGGER.error("Illegal words number.");
             throw new IllegalArgumentException("Word count must be a positive integer.");
         }
         LOGGER.info("Generating {} words.", wordCount);
