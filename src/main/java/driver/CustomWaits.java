@@ -11,9 +11,9 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElem
 public final class CustomWaits {
 
     private static final WebDriver driver = CustomWebDriver.getDriver();
-    static int timeout = Integer.parseInt(FileManagerUtil.getValue("config.json", "timeout"));
+    private static final int TIMEOUT = Integer.parseInt(FileManagerUtil.getValue("config.json", "timeout"));
 
     public static WebElement isElementVisible(By locator) {
-        return new WebDriverWait(driver, Duration.ofSeconds(timeout)).until(visibilityOfElementLocated(locator));
+        return new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT)).until(visibilityOfElementLocated(locator));
     }
 }
