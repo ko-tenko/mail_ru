@@ -20,7 +20,7 @@ public class BaseTest {
         browser.get(URL);
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
         LOGGER.info("Quitting browser.");
         browser.quit();

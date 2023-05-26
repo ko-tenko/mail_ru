@@ -16,11 +16,6 @@ public abstract class BaseElement {
         this.name = name;
     }
 
-    public void click() {
-        LOGGER.info("Clicking button [{}].", name);
-        CustomWaits.isElementVisible(locator).click();
-    }
-
     public boolean isDisplayed() {
         LOGGER.info("Checking if element [{}] is displayed.", name);
         return CustomWaits.isElementVisible(locator).isDisplayed();

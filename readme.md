@@ -1,6 +1,6 @@
 - Tools: Java, Selenium, TestNG, Maven.
 - Pattern: Page Object Model.
-- Run: add username and password to credentials.json
+- Run: add full username (ex.: ivan.petrov@mail.ru) and password to credentials.json
 
 Test case:
 

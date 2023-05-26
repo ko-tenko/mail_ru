@@ -17,6 +17,11 @@ public class Button extends BaseElement {
         this.name = name;
     }
 
+    public void click() {
+        LOGGER.info("Clicking button [{}].", name);
+        CustomWaits.isElementVisible(locator).click();
+    }
+
     public void submit() {
         LOGGER.info("Submitting button [{}].", name);
         CustomWaits.isElementVisible(locator).submit();
