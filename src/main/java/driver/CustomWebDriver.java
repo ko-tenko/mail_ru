@@ -2,7 +2,7 @@ package driver;
 
 import org.openqa.selenium.WebDriver;
 
-public class CustomWebDriver {
+public final class CustomWebDriver {
 
     private static WebDriver driver;
 
