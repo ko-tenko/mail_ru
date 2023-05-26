@@ -1,7 +1,12 @@
-Написать тестовый проект с использованием Java, Selenium, jUnit/TestNG и Page object паттерна и любого сборщика. 
-Тест должен уметь следующее: 
-- залогиниться на mail.ru; 
-- написать письмо любого содержания c заполнением поля Body (текста самого письма); 
-- отправить письмо. 
+- Tools: Java, Selenium, TestNG, Maven.
+- Pattern: Page Object Model.
+- Run: add username and password to credentials.json
 
-Проверка доставки письма не нужна, только отправка. Тестовый проект вставить как ссылку на GitHub и прислать.
+Test case:
+
+|     | Step                           | Check                    |
+|-----|--------------------------------|--------------------------|
+| 1   | Open mail.ru page              | mail.ru page is opened   |
+| 2   | Open user login form and login | User logged in           |
+| 3   | Open the email composing form  | The form is opened       |
+| 4   | Write an email and send it     | Email successfully sent  |
